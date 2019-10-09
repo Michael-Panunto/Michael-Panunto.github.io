@@ -1,3 +1,6 @@
+---
+permalink: /index.html
+---
 # Michael.Panunto.github.io
 4WW3 Project
 
