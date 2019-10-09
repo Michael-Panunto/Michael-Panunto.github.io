@@ -1,0 +1,219 @@
+body {
+    background: #EDF2F4;
+    margin: 0px;
+    padding: 0px;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    cursor: pointer;
+   }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5px 0;
+}
+
+i {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+li {
+    color: black;
+    padding: 1.5em 1em 1.5em 1.5em;
+    transition: all 0.20s linear;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    vertical-align: middle;
+    text-align: left;
+}
+
+li:hover {
+    background-color: rgba(94, 223, 255, 0.3);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+td a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+tr:hover {
+    background: rgba(94, 223, 255, 0.2);
+    cursor: pointer;
+}
+
+.sidebar {
+    z-index: 9999;
+    background: white;
+    height: 100%;
+    width: 15%;
+    min-width: 190px;
+    min-height: 450px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    border-top: solid 0.2px rgba(0,0,0,0.7);
+    border-right: solid 0.2px rgba(0,0,0,0.7);
+}
+
+.appbar {
+    background: white;
+    height: 50px;
+    min-height: 50px;
+    margin-left: 15%;
+    box-shadow: 0px 1px 4px 0px black;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    position: sticky;
+}
+
+.appbar-logo {
+    z-index: 9999;
+    text-align:center;
+    background: white;
+    height: 50px;
+    min-height: 50px;
+    width: 15%;
+    min-width: 190px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+    border-right: solid 0.3px rgba(0,0,0,0.7);
+}
+
+.page-heading {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2.5em;
+    color: black;
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 32px;
+    float: right;
+}
+
+.content-heading {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    margin: 16px;
+    margin-top: 16px;
+}
+
+.content {
+    margin: 4px 8px 8px 16%;
+    min-width: 900px;
+}
+
+.logo-text {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: regular;
+    font-size: 20px;
+}
+
+.logo-icon {
+    vertical-align:middle;
+    margin-right: 6px;
+    font-size: 33px !important;
+}
+
+.brand {
+    vertical-align: middle;
+    padding: 7px 10px;
+    line-height: 2.5em;
+    position:fixed;
+}
+
+.account-buttons {
+    border-top: solid 0.5px black;
+    border-bottom: solid 0.5px black;
+}
+
+.home-map {
+    box-shadow: 0px 1px 4px 0px black;
+    background-size: contain;
+}
+
+.result-map {
+    background-size: contain;
+    float: left;
+    max-width: 60%;
+    max-height: 75%
+}
+
+.result-table {
+    float: right;
+    max-width: 35%;
+    max-height: 75%
+}
+
+.search-results {
+    padding: 4px;
+}
+
+.arena-info {
+    float: left;
+    margin-right: 16px;
+    max-width: 35%;
+    max-height: 75%
+}
+
+.subheading-b {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    margin: 16px;
+    margin-top: 16px;
+}
+
+.subheading-n {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    margin: 16px;
+    margin-top: 16px;
+}
+
+.reviews {
+    max-width: 75%;
+    max-height: 50%;
+}

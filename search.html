@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arena Locator | Search</title>
+
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <link rel='stylesheet' type='text/css' href='./styles/main.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class='appbar-logo'>
+        <div class='brand'>
+            <i class='material-icons logo-icon'>sports_hockey</i>
+            <span class='logo-text'>Arena Locator</span>
+        </div>
+    </div>
+    <nav class='appbar'>
+        <a class='page-heading'>Search</a>
+    </nav>
+    <nav class='sidebar'>
+        <ul>
+            <li>
+                <a href='./index.html'>
+                    <i class='material-icons md-36'>home</i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href='./search.html'>
+                    <i class='material-icons md-36'>search</i>  
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href='./submission.html'>
+                    <i class='material-icons md-36'>add</i>
+                    <span>Submit Arena</span>
+                </a>
+            </li>
+        </ul>
+        <ul class='account-buttons'>
+            <li>
+                <i class='material-icons md-36'>account_circle</i>
+                <span>Sign In</span>
+            </li>
+            <li>
+                <a href='./registration.html'>
+                    <i class='material-icons md-36'>assignment</i>
+                    <span>Sign Up</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class='content'>
+            <div>
+                <h1 class=content-heading>Search for an Arena</h1>
+                <form action='./results_sample.html'>
+                    <fieldset>
+                        <legend>Search by Name</legend>
+                        Name:<br>
+                        <input type='text' name='arenaname' placeholder='Arena name here...'>
+                        <input type='submit' value='Submit'>
+                    </fieldset>
+                    <p class='content-heading'>or</p>
+                    <fieldset>
+                        <legend>Search by Rating</legend>
+                        Rating:<br/>
+                        <select name='rating'>
+                            <option value='1'>1 star</option>
+                            <option value='2'>2 stars</option>
+                            <option value='3'>3 stars</option>
+                            <option value='4'>4 stars</option>
+                            <option value='5'>5 stars</option>
+                        </select>
+                        <input type='submit' value='Submit'>
+                    </fieldset>
+                    
+                </form>
+            </div>
+    </main>
+</body>
+</html>
