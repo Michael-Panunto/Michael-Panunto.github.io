@@ -1,80 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
     <title>Arena Locator | Submit Arena</title>
 
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- css -->
     <link rel='stylesheet' type='text/css' href='./styles/main.css'>
+
+    <!-- google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+
+    <!-- google material icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <div class='appbar-logo'>
-        <div class='brand'>
-            <i class='material-icons logo-icon'>sports_hockey</i>
-            <span class='logo-text'>Arena Locator</span>
+
+    <!-- navigation -->
+    <header>
+        <nav class='appbar'>
+            <ul class='appbar'>
+                <li>
+                    <a href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                </li>
+                <li>
+                    <a href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                </li>
+                <li>
+                    <a href='./submission.html' class='current'><i class='material-icons sm-18'>add</i>Submit</a>
+                </li>
+                <li>
+                    <a class='account' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                </li>
+                <li>
+                    <a class='account' href='#'><i class='material-icons sm-18'>account_circle</i>Sign In</a>
+                </li>
+            </ul>
+            <a href="#" id="dropdown">Arena Locator</a>
+        </nav>
+    </header>
+
+    <!-- main content -->
+
+    <main class='main-section'>
+        <div class='content'>
+            <h1 class='heading'>Live Map</h1>
+            <form action='./index.html' class='formentry'>
+                <fieldset>
+                    <legend class='legend'>Arena Info</legend>
+                    Arena Name:<br>
+                    <input type='text' name='arenaname' placeholder='Arena name here...' required><br>
+                    Arena Description (Ice hockey, lacrosse, ball-hockey etc):<br>
+                    <input type='text' name='arenadesc' placeholder='Arena description here...' required><br>
+                    Arena Image:<br>
+                    <input type='file' name='arenaimg' accept='image/*' required><br>
+                </fieldset>
+                <fieldset>
+                    <legend class='legend'>Arena Location</legend>
+                    Longitude:<br>
+                    <input id='longitude' type='number' step='0.000000001' name='longitude' placeholder='0' min='-90' max='90'><br>
+                    Latitude:<br>
+                    <input id='latitude' type='number' step='0.000000001' name='latitude' placeholder='0' min='-180' max='180'><br>
+                    <p id='location-heading'>Use my location: <a class='locationbtn' onclick='getLocation()'><i class='material-icons sm-18'>my_location</i></a></p>
+                </fieldset>
+                <input style='margin: 4px;' type='submit' value='Submit'>
+            </form>
         </div>
-    </div>
-    <nav class='appbar'>
-        <a class='page-heading'>Arena Submission</a>
-    </nav>
-    <nav class='sidebar'>
-        <ul>
-            <li>
-                <a href='./index.html'>
-                    <i class='material-icons md-36'>home</i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href='./search.html'>
-                    <i class='material-icons md-36'>search</i>  
-                    <span>Search</span>
-                </a>
-            </li>
-            <li>
-                <a href='./submission.html'>
-                    <i class='material-icons md-36'>add</i>
-                    <span>Submit Arena</span>
-                </a>
-            </li>
-        </ul>
-        <ul class='account-buttons'>
-            <li>
-                <i class='material-icons md-36'>account_circle</i>
-                <span>Sign In</span>
-            </li>
-            <li>
-                <a href='./registration.html'>
-                    <i class='material-icons md-36'>assignment</i>
-                    <span>Sign Up</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <main class='content'>
-            <div>
-                <h1 class=content-heading>Submit a New Arena</h1>
-                <form action='./index.html'>
-                    <fieldset>
-                        <legend>Arena Info</legend>
-                        Arena Name:<br>
-                        <input type='text' name='arenaname' placeholder='Arena name here...'><br>
-                        Arena Description (Ice hockey, lacrosse, ball-hockey etc):<br>
-                        <input type='text' name='arenadesc' placeholder='Arena description here...'><br>
-                        Arena Image:<br>
-                        <input type='file' name='arenaimg' accept='image/*'><br>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Arena Location</legend>
-                        Longitude:<br>
-                        <input type='number' name='longitude' placeholder='0' min='-90' max='90'><br>
-                        Latitude:<br>
-                        <input type='number' name='latitude' placeholder='0' min='-180' max='180'><br>
-                    </fieldset>
-                    <input type='submit' value='Submit'>
-                </form>
-            </div>
     </main>
 </body>
+
+<script src='./js/menu.js'></script>
+<script src='./js/submit.js'></script>
 </html>

@@ -1,92 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
-    <title>Arena Locator | Results</title>
+    <title>Arena Locator | Search Results</title>
 
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- css -->
     <link rel='stylesheet' type='text/css' href='./styles/main.css'>
+
+    <!-- google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+
+    <!-- google material icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <div class='appbar-logo'>
-        <div class='brand'>
-            <i class='material-icons logo-icon'>sports_hockey</i>
-            <span class='logo-text'>Arena Locator</span>
-        </div>
-    </div>
-    <nav class='appbar'>
-        <a class='page-heading'>Search Results</a>
-    </nav>
-    <nav class='sidebar'>
-        <ul>
-            <li>
-                <a href='./index.html'>
-                    <i class='material-icons md-36'>home</i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href='./search.html'>
-                    <i class='material-icons md-36'>search</i>  
-                    <span>Search</span>
-                </a>
-            </li>
-            <li>
-                <a href='./submission.html'>
-                    <i class='material-icons md-36'>add</i>
-                    <span>Submit Arena</span>
-                </a>
-            </li>
-        </ul>
-        <ul class='account-buttons'>
-            <li>
-                <i class='material-icons md-36'>account_circle</i>
-                <span>Sign In</span>
-            </li>
-            <li>
-                <a href='./registration.html'>
-                    <i class='material-icons md-36'>assignment</i>
-                    <span>Sign Up</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <main class='content'>
-            <div>
-                <h1 class=content-heading>Search for an Arena</h1>
-                <img class='result-map' src='./images/IndividualSample.png' alt='Canlan Oakville Map'>
-                <div class='arena-info'>
-                    <h2 class='content-heading'>Canlan Ice Sports</h2>
+
+    <!-- navigation -->
+    <header>
+        <nav class='appbar'>
+            <ul class='appbar'>
+                <li>
+                    <a href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                </li>
+                <li>
+                    <a href='./search.html' class='current'><i class='material-icons sm-18'>search</i>Search</a>
+                </li>
+                <li>
+                    <a href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                </li>
+                <li>
+                    <a class='account' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                </li>
+                <li>
+                    <a class='account' href='#'><i class='material-icons sm-18'>account_circle</i>Sign In</a>
+                </li>
+            </ul>
+            <a href="#" id="dropdown">Arena Locator</a>
+        </nav>
+    </header>
+
+    <!-- main content -->
+
+    <main class='main-section'>
+        <div class='content'>
+            <h1 class='heading'>Search Results</h1>
+            <div id='map'></div>
+            <div class='arena-info'>
+                    <h2 class='heading'>Canlan Ice Sports</h2>
                     <span><p class='subheading-b'>Address: </p><p class='subheading-n'>2300 Cornwall Rd, Oakville, ON L6J 7T9</p></span>
                     <span><p class='subheading-b'>Phone: </p><p class='subheading-n'>(905) 849-6989</p></span>
                     <span><p class='subheading-b'>Hours Today: </p><p class='subheading-n'>9am - 10pm</p></span>
                 </div>
-            </div>
-            <div class='reviews'>
-                <table>
-                    <tr>
-                        <th>User</th>
-                        <th>Rating</th>
-                        <th>Review</th>
-                    </tr>
-                    <tr>
-                        <td>User_14485</td>
-                        <td>5 stars</td>
-                        <td>Great arena, clean rooms, ice is well kept</td>
-                    </tr>
-                    <tr>
-                        <td>User_10955</td>
-                        <td>3 stars</td>
-                        <td>Ice is good, rooms way too small for a big team</td>
-                    </tr>
-                    <tr>
-                        <td>User_84</td>
-                        <td>4 stars</td>
-                        <td>Arena is fantastic, however their customer support is lacking</td>
-                    </tr>
-                </table>
+                </div>
+                <div>
+                    <table class='result-table center'>
+                        <tr>
+                            <th>User</th>
+                            <th>Rating</th>
+                            <th>Review</th>
+                        </tr>
+                        <tr>
+                            <td>User_14485</td>
+                            <td>5 stars</td>
+                            <td>Great arena, clean rooms, ice is well kept</td>
+                        </tr>
+                        <tr>
+                            <td>User_10955</td>
+                            <td>3 stars</td>
+                            <td>Ice is good, rooms way too small for a big team</td>
+                        </tr>
+                        <tr>
+                            <td>User_84</td>
+                            <td>4 stars</td>
+                            <td>Arena is fantastic, however their customer support is lacking</td>
+                        </tr>
+                    </table>
             </div>
     </main>
 </body>
+
+<script src='./js/menu.js'></script>
+<script src='./js/individual_result.js'></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDreWvJpmH5AKUZS-1IEVEotY78DG3Z8Fk&callback=initMap">
+</script>
 </html>
